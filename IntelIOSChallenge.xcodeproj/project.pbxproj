@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD4BA1E43E1477E1ACEDED16 /* Pods_IntelIOSChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C12B6766208BE908B47E69 /* Pods_IntelIOSChallenge.framework */; };
 		CC554C511D585B1800CC11F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC554C501D585B1800CC11F1 /* AppDelegate.swift */; };
 		CC554C531D585B1800CC11F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC554C521D585B1800CC11F1 /* ViewController.swift */; };
 		CC554C561D585B1800CC11F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC554C541D585B1800CC11F1 /* Main.storyboard */; };
 		CC554C581D585B1800CC11F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC554C571D585B1800CC11F1 /* Assets.xcassets */; };
 		CC554C5B1D585B1800CC11F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC554C591D585B1800CC11F1 /* LaunchScreen.storyboard */; };
+		CC554C631D585BD400CC11F1 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC554C621D585BD400CC11F1 /* APIService.swift */; };
+		CC554C651D585C5400CC11F1 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC554C641D585C5400CC11F1 /* Book.swift */; };
+		CC554C671D5861C300CC11F1 /* NetworkObjectSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC554C661D5861C300CC11F1 /* NetworkObjectSerializer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E67B9E1952BCF7F3A2C72D1 /* Pods-IntelIOSChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelIOSChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-IntelIOSChallenge/Pods-IntelIOSChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		27C12B6766208BE908B47E69 /* Pods_IntelIOSChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntelIOSChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC554C4D1D585B1800CC11F1 /* IntelIOSChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntelIOSChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC554C501D585B1800CC11F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC554C521D585B1800CC11F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,10 @@
 		CC554C571D585B1800CC11F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC554C5A1D585B1800CC11F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC554C5C1D585B1800CC11F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC554C621D585BD400CC11F1 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		CC554C641D585C5400CC11F1 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		CC554C661D5861C300CC11F1 /* NetworkObjectSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkObjectSerializer.swift; sourceTree = "<group>"; };
+		F37C545C18F9FED93086B045 /* Pods-IntelIOSChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelIOSChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IntelIOSChallenge/Pods-IntelIOSChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD4BA1E43E1477E1ACEDED16 /* Pods_IntelIOSChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +51,8 @@
 			children = (
 				CC554C4F1D585B1800CC11F1 /* IntelIOSChallenge */,
 				CC554C4E1D585B1800CC11F1 /* Products */,
+				D516BB8DFB117865B5A6A6B8 /* Pods */,
+				EAD3911A5ECA3004CD66B9EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +73,28 @@
 				CC554C571D585B1800CC11F1 /* Assets.xcassets */,
 				CC554C591D585B1800CC11F1 /* LaunchScreen.storyboard */,
 				CC554C5C1D585B1800CC11F1 /* Info.plist */,
+				CC554C621D585BD400CC11F1 /* APIService.swift */,
+				CC554C661D5861C300CC11F1 /* NetworkObjectSerializer.swift */,
+				CC554C641D585C5400CC11F1 /* Book.swift */,
 			);
 			path = IntelIOSChallenge;
+			sourceTree = "<group>";
+		};
+		D516BB8DFB117865B5A6A6B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F37C545C18F9FED93086B045 /* Pods-IntelIOSChallenge.debug.xcconfig */,
+				0E67B9E1952BCF7F3A2C72D1 /* Pods-IntelIOSChallenge.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EAD3911A5ECA3004CD66B9EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27C12B6766208BE908B47E69 /* Pods_IntelIOSChallenge.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC554C5F1D585B1800CC11F1 /* Build configuration list for PBXNativeTarget "IntelIOSChallenge" */;
 			buildPhases = (
+				2DF7243A6755C423C4FC6B16 /* [CP] Check Pods Manifest.lock */,
 				CC554C491D585B1800CC11F1 /* Sources */,
 				CC554C4A1D585B1800CC11F1 /* Frameworks */,
 				CC554C4B1D585B1800CC11F1 /* Resources */,
+				55201ED6D886680A42B70CC1 /* [CP] Embed Pods Frameworks */,
+				5931271C8DCA36C300841E2C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,13 +166,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2DF7243A6755C423C4FC6B16 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		55201ED6D886680A42B70CC1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IntelIOSChallenge/Pods-IntelIOSChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5931271C8DCA36C300841E2C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IntelIOSChallenge/Pods-IntelIOSChallenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CC554C491D585B1800CC11F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC554C651D585C5400CC11F1 /* Book.swift in Sources */,
 				CC554C531D585B1800CC11F1 /* ViewController.swift in Sources */,
+				CC554C631D585BD400CC11F1 /* APIService.swift in Sources */,
 				CC554C511D585B1800CC11F1 /* AppDelegate.swift in Sources */,
+				CC554C671D5861C300CC11F1 /* NetworkObjectSerializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +334,7 @@
 		};
 		CC554C601D585B1800CC11F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F37C545C18F9FED93086B045 /* Pods-IntelIOSChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = IntelIOSChallenge/Info.plist;
@@ -258,6 +346,7 @@
 		};
 		CC554C611D585B1800CC11F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E67B9E1952BCF7F3A2C72D1 /* Pods-IntelIOSChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = IntelIOSChallenge/Info.plist;
@@ -286,6 +375,7 @@
 				CC554C611D585B1800CC11F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,12 +7,22 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let request = APIService.volumes("apple") { (result) in
+            print(result)
+        }
+//        can cancel request
+//        request.cancel()
+        
+        
+        let books = APIService.volumes("apple")
+        print(books)
     }
 
     override func didReceiveMemoryWarning() {
